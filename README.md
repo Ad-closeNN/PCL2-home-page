@@ -1,2 +1,4 @@
-# PCL2-home-page
-This is a home-page for PCL 2 Minecraft Launcher.
+# Changes
+### V1.2 (2023/12/3)
+1.将"版权信息"更新
+2.增加"快捷方式"，可启动其他程序
