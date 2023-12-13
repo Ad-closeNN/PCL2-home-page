@@ -1,4 +1,7 @@
 # Changes
+### V1.3.5 (2023/12/13)
+1.修复了存在于[V1.3](https://github.com/Ad-closeNN/PCL2-home-page/releases/tag/1.3 "V1.3")的"常用网址→Minecraft常用网址→Minecraft 官方网站"`无法点击`的问题\
+2.将"版权信息"更新
 ### V1.3 (2023/12/9)
 1.将"版权信息"更新\
 2.把"快捷方式"的按钮改为列表形式\
