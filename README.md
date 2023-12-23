@@ -1,4 +1,7 @@
 # Changes
+### V1.4.5 (2023/12/23)
+1.修复了存在于[V1.4](https://githubfast.com/Ad-closeNN/PCL2-home-page/releases/tag/1.4 "V1.4")的"下载本主页源文件"`无法下载`的问题\
+2.将"版权信息"更新
 ### V1.4 (2023/12/22)
 1.修复了存在于[V1.3.5](https://githubfast.com/Ad-closeNN/PCL2-home-page/releases/tag/1.3.5 "V1.3.5")的"常用网址→Minecraft常用网址→MC百科"`多出一个一样的"MC百科"`的问题\
 2.将"版权信息"更新\
