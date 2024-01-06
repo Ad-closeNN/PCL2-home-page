@@ -1,4 +1,17 @@
+![GitHub Release](https://img.shields.io/github/v/release/Ad-closeNN/PCL2-home-page)
+![GitHub Tag](https://img.shields.io/github/v/tag/ad-closenn/PCL2-home-page)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/ad-closenn/PCL2-home-page)
+![GitHub contributors](https://img.shields.io/github/contributors/ad-closenn/PCL2-home-page)
+![GitHub repo size](https://img.shields.io/github/repo-size/ad-closenn/PCL2-home-page)
+![GitHub Repo stars](https://img.shields.io/github/stars/ad-closenn/PCL2-home-page)
+# 由 Ad_closeNN 制作的 PCL 2 主页
+### 如何使用
+你可以在 PCL 2 设置中选择联网更新，网址是`https://ad-closenn.github.io/aft/Custom.xaml`\
+更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
+### V1.6.5 (2024/1/6)
+1.修复了存在于[V1.6](https://githubfast.com/Ad-closeNN/PCL2-home-page/releases/tag/1.6 "V1.6")版本的最后的"V1.6"未更正的问题\
+2.将"版权信息"更新
 ### V1.6 (2024/1/1)
 1.增加了"奇怪的东西"，展开卡片后可详细查看\
 2.将"版权信息"更新，同时祝大家新年快乐！\
