@@ -9,6 +9,12 @@
 你可以在 PCL 2 设置中选择联网更新，网址是`https://ad-closenn.github.io/aft/Custom.xaml`\
 更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
+### V1.7 (2024/1/7)
+1.修复了"新 年 快 乐!"字样的"!"没有空格的问题\
+2.将"版权信息"更新\
+3.更新了作者声明, 来源于 Light Beacon (最亮的信标) 的"PCL2 新闻主页"\
+4.增加"版本切换", 可以快速查看历史主页版本, 来源于 Light Beacon (最亮的信标) 的"PCL2 新闻主页"\
+5.增加结束段, 来源于 Light Beacon (最亮的信标) 的"PCL2 新闻主页"
 ### V1.6.5 (2024/1/6)
 1.修复了存在于[V1.6](https://githubfast.com/Ad-closeNN/PCL2-home-page/releases/tag/1.6 "V1.6")版本的最后的"V1.6"未更正的问题\
 2.将"版权信息"更新
