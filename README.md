@@ -9,6 +9,9 @@
 你可以在 PCL 2 设置中选择联网更新，网址是`https://ad-closenn.github.io/aft/Custom.xaml`\
 更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
+### V1.10 (2024/1/19)
+1.把 GitHub 关于下载的链接换成更快的 [CDN](https://www.jsdelivr.com)\
+2.将"版权信息"更新
 ### V1.9 (2024/1/19)
 1.把"小玩意"中的"下载器"进行微调\
 2.将"版权信息更新"\
