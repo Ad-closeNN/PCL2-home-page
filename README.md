@@ -9,6 +9,14 @@
 你可以在 PCL 2 设置中选择联网更新，网址是`https://ad-closenn.github.io/aft/Custom.xaml`\
 更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
+### V1.11 (2024/1/21)
+1.把"小玩意"中的日历移除\
+2.将"版权信息"更新\
+3.忘记了项目是开源的了, 所以现在删除"未经允许, 禁止二次发布"的提示条, 改为贡献代码者名单\
+4.将 CDN 的 @latest 改为 @main\
+5.优化"小玩意"和"常用网址"\
+6."更多"页更新\
+7."常用网址"页更新
 ### V1.10 (2024/1/19)
 1.把 GitHub 关于下载的链接换成更快的 [CDN](https://www.jsdelivr.com)\
 2.将"版权信息"更新
