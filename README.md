@@ -9,6 +9,14 @@
 你可以在 PCL 2 设置中选择联网更新，网址是`https://ad-closenn.github.io/aft/Custom.xaml`\
 更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
+### V1.13 (2024/3/10)
+1.把"2 0 2 4 , 新 年 快 乐 !"删除\
+2.将"版权信息"更新\
+3.将CDN重新换成v1.11的cdn.jsdelivr.com\
+4.把启动警告条加入"快捷方式"\
+5.优化"小玩意"中"下载器"部分的链接输入框的显示\
+6.加入了"GitHub - PCL2 常用网址"\
+7.优化了其他地方
 ### V1.12 (2024/2/22)
 1.把"Welcome to Plain Craft Launcher 2 and this homepage!"的对齐方式从左改为中\
 2.将"版权信息"更新\
