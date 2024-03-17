@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 征集主页到 PCL 仓库（Hex-Dragon）
+    url: https://github.com/Hex-Dragon/PCL2/discussions/2528
+    about: 提交 PCL 主页给龙猫审核，通过则加入 PCL2 预设主页
+  - name: 征集主页到 PCL 主页市场（MFn233）
+    url: https://github.com/MFn233/PCL-Mainpage-Market/issues/new?title=[新主页] &labels=新主页
+    about: 提交 PCL 主页给Mfn233审核，通过则加入 主页市场

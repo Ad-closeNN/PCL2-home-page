@@ -1,0 +1,32 @@
+name: "优化建议"
+description: "对已有功能的小幅度优化或改进建议"
+labels: [· 优化, 新反馈]
+body:
+- type: checkboxes
+  id: "yml-1"
+  attributes:
+    label: "检查项"
+    description: "请逐个检查下列项目，并勾选确认。"
+    options:
+    - label: "我确定这不是 [新功能提案](https://github.com/Ad-closeNN/PCL2-home-page/issues/new?assignees=&labels=%C2%B7+%E6%96%B0%E5%8A%9F%E8%83%BD%2C%E6%96%B0%E5%8F%8D%E9%A6%88&projects=&template=feature.yml) 类型的 Issue，这是 优化 类型的 Issue。"
+      required: true
+    - label: "我确定这不是 [Bug 反馈](https://github.com/Ad-closeNN/PCL2-home-page/issues/new?projects=&template=bug9.yml) 类型的 Issue，这是 优化 类型的 Issue。"
+      required: true
+- type: textarea
+  id: "yml-2"
+  attributes:
+    label: 描述
+    description: "详细描述具体需要优化哪些地方，要改成怎样的。"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-3"
+  attributes:
+    label: 原因
+    description: "详细描述你为什么需要这项优化，这有助于开发者评估它的优先度。"
+    value: |
+      （示例）
+      这项优化让我可以更方便地xxxx。
+      如果没有这项优化，我每次都必须xxxx，让操作变得很麻烦。
+  validations:
+    required: true
