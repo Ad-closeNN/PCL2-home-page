@@ -22,8 +22,9 @@
 
 </local:MyCard>
 
-<TextBlock HorizontalAlignment="center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="30"
-               Text="Welcome to Plain Craft Launcher 2 and this homepage!" />
+
+<TextBlock HorizontalAlignment="center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="30" TextWrapping="Wrap"
+               FontFamily="HarmonyOS Sans, HarmonyOS Sans SC, MiSans, Times New Roman, Microsoft YaHei UI, 微软雅黑" Text="Welcome to Plain Craft Launcher 2 and this homepage!" />
 <StackPanel Margin="0,0,0,15"/>
 <!--从这里开始用了 Light Beacon 新闻主页的信息样式，十分感谢-->
 <StackPanel>
@@ -41,12 +42,12 @@
       <Grid Margin="10,0,0,0">
 
 
-<TextBlock x:Name="NewsHint" FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#FF000000">
+<TextBlock x:Name="NewsHint" FontWeight="Bold" FontSize="12" FontFamily="Microsoft YaHei UI, 微软雅黑" VerticalAlignment="Center" Foreground="#FF000000">
                 📰 主页由 Ad_closeNN 制作与维护。
 </TextBlock>
 
-        <TextBlock x:Name="Hint2" FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#00000000">
-                📰 主页由 Ad_closeNN 制作与维护。
+        <TextBlock x:Name="Hint2" FontWeight="Bold" FontSize="12" FontFamily="Microsoft YaHei UI, 微软雅黑" VerticalAlignment="Center" Foreground="#00000000">
+                📖 主页由 Ad_closeNN 制作与维护。
     </TextBlock>
       </Grid>
     </Border>
@@ -55,41 +56,60 @@
 <!--从这里开始用了 Light Beacon 新闻主页的信息样式，十分感谢-->
 <local:MyHint Margin="0,0,0,0" IsWarn="False"
 				Text="感谢 Light Beacon, MFn233, SYBass 贡献主页代码！"/>
-	<StackPanel Margin="0,0,0,10"/>
-<StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
+                <StackPanel Margin="0,0,0,10"/>
+        <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" /> 
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" /> 
+                                    <ColumnDefinition Width="1*" /> 
+                                </Grid.ColumnDefinitions>
+<local:MyButton Height="35" Grid.Column="0"  Margin="0,0,5,4"
                     Text="刷新主页" EventType="刷新主页" ToolTip="就是一个刷新主页的按钮啦......"/>
-<local:MyButton HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
-					Text="打开 PCL 文件夹下的主页源代码" EventType="打开文件" EventData="{path}\PCL\Custom.xaml" ToolTip="将打开: {path}PCL\Custom.xaml"/>
-<local:MyButton HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
+<local:MyButton Grid.Column="1"  Margin="0,0,5,4"
+					Text="编辑本地主页源代码" EventType="打开文件" EventData="{path}\PCL\Custom.xaml" ToolTip="将打开: {path}PCL\Custom.xaml"/>
+<local:MyButton Grid.Column="2"  Margin="0,0,5,4"
 					Text="打开 PCL 的目录" EventType="打开文件" EventData="{path}" ToolTip="你的 PCL 位于: {path}"/>
-<local:MyButton HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
+<local:MyButton Grid.Column="3"  Margin="0,0,5,4"
 					Text="打开 PCL 当前的日志" EventType="打开文件" EventData="{path}PCL\Log1.txt" ToolTip="将打开 {path}PCL\Log1.txt"/>
-<local:MyButton HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
-					Text="下载本主页源文件" EventType="下载文件" EventData="https://cdn.jsdelivr.net/gh/Ad-closeNN/aft@main/Backup/1.14/Custom.xaml" ToolTip="直接把 Custom.xaml 放入 {path}PCL\ 文件夹即可"/>
-</StackPanel>
+<local:MyButton Grid.Column="4"  Margin="0,0,5,4"
+					Text="下载本主页源文件" EventType="下载文件" EventData="https://cdn.jsdelivr.net/gh/Ad-closeNN/aft@main/Backup/1.15/Custom.xaml" ToolTip="直接把 Custom.xaml 放入 {path}PCL\ 文件夹即可"/>
+</Grid>
 	<StackPanel Margin="0,0,0,15"/>
 <local:MyButton Padding="13,10,13,10" ColorType="Red"
                     Text="打开 Minecraft News" EventType="打开帮助" EventData="https://news.bugjump.net/News.json"/>
 	<StackPanel Margin="0,0,0,15"/>
 
+
 <local:MyCard Title="| 首页 |" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
-<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="25,40,23,15">
-        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
-                    Text="版权信息" EventData="版权信息 - Copyright © Ad_closeNN 2024. All Rights Reserved.|本主页由 Ad_closeNN 制作\n当前版本为: Version 1.14\nCopyright © Ad_closeNN 2024. All Rights Reserved." EventType="弹出窗口"/>
+    <StackPanel Margin="25,40,23,15" >
+            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" /> <!--首页开始用-->
+                                    <ColumnDefinition Width="1*" />                
+                                    <ColumnDefinition Width="1*" />                                    
+                                </Grid.ColumnDefinitions>
+        <local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,0"
+                    Text="版权信息" EventData="版权信息 - Copyright © Ad_closeNN 2024. All Rights Reserved.|本主页由 Ad_closeNN 制作\n当前版本为: Version 1.15\nCopyright © Ad_closeNN 2024. All Rights Reserved." EventType="弹出窗口"/>
 <!--这样看挺好的吧-->
-			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
-				        	Text="更新内容" EventData=
-'V1.14 (2024/3/22) - 更新内容|
-1.加入了"操作中心", 可直接在里面快捷操作\n
+			<local:MyButton Grid.Column="1" Height="35" Margin="0,0,10,0"
+				        	Text="更新内容" EventData='
+V1.15 (2024/3/23) - 更新内容|
+1.将"更多主页"中的SYC（SYBass）"预览主页" 改为官方链接\n
 2.将"版权信息"更新\n
-2.将"鸣谢提示条"加入SYBass\n
-4.优化了其他地方
+3.大多数按钮和一个文本已改为 Grid 布局, 可根据窗口大小自动调整按钮大小\n
+4."反馈"按钮改为"选择issue类型"\n
+5."切换版本" 已上下对齐\n
+6.优化了其他地方\n
+7.移除了Him
 '
+
 							EventType="弹出窗口"/>
-        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" Margin="0,0,10,0"
-					        Text="前往个性化" ToolTip="可以快速切换主页" EventType="切换页面" EventData="3|1" />
-	</StackPanel>
+        <local:MyButton Grid.Column="2" Height="35" Margin="0,0,10,0"
+					        Text="前往 PCL 个性化" ToolTip="可以快速切换主页" EventType="切换页面" EventData="3|1" />
+</Grid>
+</StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="常用网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
@@ -167,21 +187,26 @@
               <TextBlock Text="百 宝 箱" HorizontalAlignment="Center" FontSize="14" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" />
               <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
       </Grid>
-      <StackPanel Orientation="Horizontal" HorizontalAlignment="center" Margin="0,10,10,10">
-			<local:MyButton Width="200" Height="35" HorizontalAlignment="left" Padding="13,0,23,0" Margin="0,0,10,10" ColorType="Red"
+              <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" /> 
+                                    <ColumnDefinition Width="1*" /> 
+                                </Grid.ColumnDefinitions>
+			<local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,10" ColorType="Red"
           Text="今日人品" EventType="今日人品"/>
-			<local:MyButton Width="200" Height="35" HorizontalAlignment="left" Padding="13,0,23,0" Margin="0,0,10,10" ColorType="Red"
+			<local:MyButton Grid.Column="1" Height="35" Margin="0,0,10,10" ColorType="Red"
           Text="内存优化" EventType="内存优化"/>
-			<local:MyButton Width="200" Height="35" HorizontalAlignment="left" Padding="13,0,23,0" Margin="0,0,10,10" ColorType="Red"
+			<local:MyButton Grid.Column="2" Height="35" Margin="0,0,10,10" ColorType="Red"
           Text="清理垃圾" EventType="清理垃圾"/>
-          </StackPanel>   
+          </Grid>
+
             <StackPanel Margin="0,0,0,15"/>
 			<local:MyTextButton Margin="0,0,0,4"
 					Text="你知道吗: {hint}" EventType="刷新主页" ToolTip="点击刷新 你知道吗 和 回声洞"/>
 			<local:MyTextButton Margin="0,0,0,4"
 					Text="回声洞: {cave}" EventType="刷新主页" ToolTip="点击刷新 你知道吗 和 回声洞"/>	
-		
-  </StackPanel>
+</StackPanel>
 </local:MyCard>
 <local:MyCard Title="快捷方式" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
               <StackPanel Margin="24,40,24,15">
@@ -294,10 +319,8 @@
   <local:MyCard Title="SYBass (仕洋不是羊): SYC" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
         <StackPanel Margin="25,40,23,15">
         <StackPanel Orientation="Horizontal">
-        <!--因为SYBasss没有在repo中添加json，这部分代码被改为复制链接，等做好json后再重做-->
-        <!--暂时使用我的仓库链接顶着先吧-->
         <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-            Text="预览主页" EventType="打开帮助" EventData="https://cdn.jsdelivr.net/gh/Ad-closeNN/SYC@main/Custom.json"/>
+            Text="预览主页" EventType="打开帮助" EventData="https://cdn.jsdelivr.net/gh/SYBass/SYC@main/Custom.json"/>
         <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
             Text="主页所在的网页" EventType="打开网页" EventData="https://github.com/SYBass/SYC/blob/main/Custom.xaml"/>
         <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
@@ -320,23 +343,23 @@
             <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="280" />
-            <ColumnDefinition Width="0.3*" />
-                </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
             <local:MyComboBox x:Name="jumpbox" Height="30" SelectedIndex="0">
+            <local:MyComboBoxItem Content="1.15"/>                                   
             <local:MyComboBoxItem Content="1.14"/>                                   
             <local:MyComboBoxItem Content="1.13"/>                                   
             <local:MyComboBoxItem Content="1.12"/>                       
-			      <local:MyComboBoxItem Content="1.11"/>                       
+			<local:MyComboBoxItem Content="1.11"/>                       
             <local:MyComboBoxItem Content="1.10"/>                       
             <local:MyComboBoxItem Content="1.9"/>                       
             <local:MyComboBoxItem Content="1.8"/>            
             <local:MyComboBoxItem Content="1.7"/>
             <local:MyComboBoxItem Content="1.6.5" />
-			      <local:MyComboBoxItem Content="1.6" />
+			<local:MyComboBoxItem Content="1.6" />
             <local:MyComboBoxItem Content="1.5" />
             <local:MyComboBoxItem Content="1.4.5" />
             <local:MyComboBoxItem Content="1.4" />
-                </local:MyComboBox>
+            </local:MyComboBox>
 		    <local:MyButton Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Width="130" Text="打开 GitHub" EventType="打开网页" EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=https://github.com/Ad-closeNN/pcl2-home-page/releases/tag/{0}}" />
             <local:MyButton HorizontalAlignment="Right" Width="130" Grid.Column="1" Text="打开所选的版本" EventType="打开帮助" EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=https://cdn.jsdelivr.net/gh/Ad-closeNN/aft/Backup/{0}/Custom.json}" />
             </Grid>
@@ -367,20 +390,20 @@
 		Logo="https://ad-closenn.github.io/aft/favicon.ico" Title="主页源代码 (Website)" Info="Homepage Website"
 		EventType="打开网页" EventData="https://ad-closenn.github.io/aft" Type="Clickable" />
 <TextBlock HorizontalAlignment="right" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" 
-               Text="Ver 1.14 (2024/3/22)" />
+               FontFamily="Microsoft YaHei UI, 微软雅黑" Text="Ver 1.15 (2024/3/23)" />
 
     <StackPanel Margin="0,10,0,20" HorizontalAlignment="Center" Orientation="Horizontal">
       <local:MyButton Width="300" Height="35" Padding="13,0,13,0" Text="刷新" EventType="刷新主页" Margin="0,0,10,0" ToolTip="点击刷新主页" />
-      <local:MyButton Width="100" Height="35" Padding="13,0,13,0" Text="反馈" EventType="打开网页" EventData="https://github.com/Ad-closeNN/PCL2-home-page/issues/new" ToolTip="点击前往 GitHub 提交反馈" />
+      <local:MyButton Width="100" Height="35" Padding="13,0,13,0" Text="反馈" EventType="打开网页" EventData="https://github.com/Ad-closeNN/PCL2-home-page/issues/new/choose" ToolTip='点击前往 GitHub 提交反馈。&#xA;选择想提交反馈的类型, 然后点击 "Get started"填写表单即可。&#xA;操作中心的反馈Bug按钮可以快速选择Bug类型的issue供填写。' />
     </StackPanel>
     <Border Background="#A0FFFFFF" Height="20720" Margin="-25,10,-25,-20500" BorderThickness="0,2,0,0" BorderBrush="#AAAAAAAA">
       <StackPanel Margin="40,15,0,10">
-        <TextBlock Text="Plain Craft Launcher 2 主页" FontSize="22" Margin="0,5,5,5" />
-        <TextBlock Text="By：Ad_closeNN" />
+        <TextBlock Text="Plain Craft Launcher 2 主页" FontFamily="HarmonyOS Sans, HarmonyOS Sans SC, MiSans, Microsoft YaHei UI, 微软雅黑" FontSize="22" Margin="0,5,5,5" />
+        <TextBlock Text="制作：Ad_closeNN" />
         <TextBlock Text="维护：Ad_closeNN" />
         <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-          <TextBlock Text="订阅地址 (推荐, 使用 CDN 加速): " />
-          <local:MyTextButton Margin="2" Text="https://cdn.jsdelivr.net/gh/Ad-closeNN/aft/Custom.xaml" EventType="复制文本" EventData="https://cdn.jsdelivr.net/gh/Ad-closeNN/aft/Custom.xaml" ToolTip="点击复制到剪贴板" />
+          <TextBlock TextWrapping="Wrap" Text="订阅地址 (推荐, 使用 CDN 加速): " />
+          <local:MyTextButton Margin="2" Text="https://cdn.jsdelivr.net/gh/Ad-closeNN&#x0a;/aft/Custom.xaml" EventType="复制文本" EventData="https://cdn.jsdelivr.net/gh/Ad-closeNN/aft/Custom.xaml" ToolTip="点击复制到剪贴板" />
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
           <TextBlock Text="订阅地址 (无 CDN 加速): " />
@@ -411,10 +434,11 @@
                 </ColumnDefinition>
               </Grid.ColumnDefinitions>
               <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
-              <TextBlock Text="到 底 啦" HorizontalAlignment="Center" FontSize="16" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" />
+              <TextBlock Text="到 底 啦" HorizontalAlignment="Center" FontSize="16" Foreground="{DynamicResource ColorBrush2}" Grid.Column="1" VerticalAlignment="Center" />
               <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
             </Grid>
           </StackPanel>
         </Border>
       </StackPanel>
     </Border>
+<StackPanel Margin="0,0,0,35"/>
