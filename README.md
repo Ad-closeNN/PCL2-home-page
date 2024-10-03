@@ -10,10 +10,10 @@
 更多内容可访问`https://ad-closenn.github.io/aft/`
 # Changes
 ### V1.16.2 (2024/10/3)
-1.将一些 GitHub 链接 替换为 [GitCode](https://gitcode.com) 链接\n
-2.将"版权信息"更新\n
-3.由于一些原因，导致 PCL 无法访问 Wemsur 的 pcl_homepage，故移除此主页\n
-4.优化其他细节（标题文字等）\n
+1.将一些 GitHub 链接 替换为 [GitCode](https://gitcode.com) 链接\
+2.将"版权信息"更新\
+3.由于一些原因，导致 PCL 无法访问 Wemsur 的 pcl_homepage，故移除此主页\
+4.优化其他细节（标题文字等）
 ### V1.15 (2024/3/23)
 1.将"更多主页"中的SYC（SYBass）"预览主页" 改为官方链接\
 2.将"版权信息"更新\
