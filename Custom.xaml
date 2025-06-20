@@ -23,10 +23,10 @@
 </local:MyCard>
 
 
-<TextBlock HorizontalAlignment="center" Margin="0,0,0,0" Foreground="{DynamicResource ColorBrush2}" FontSize="30" TextWrapping="Wrap"
+<TextBlock HorizontalAlignment="center" Margin="0,0,0,0" Foreground="{DynamicResource ColorBrush2}" FontSize="40" TextWrapping="Wrap"
                FontFamily="HarmonyOS Sans, HarmonyOS Sans SC, MiSans, Times New Roman, Microsoft YaHei UI, 微软雅黑" Text="Plain Craft Launcher 2" />
 <TextBlock HorizontalAlignment="center" Margin="0,0,0,0" Foreground="gray" FontSize="18" TextWrapping="Wrap"
-               FontFamily="HarmonyOS Sans, HarmonyOS Sans SC, MiSans, Times New Roman, Microsoft YaHei UI, 微软雅黑" Text=".NET EDITION" />
+               FontFamily="HarmonyOS Sans, HarmonyOS Sans SC, MiSans, Times New Roman, Microsoft YaHei UI, 微软雅黑" Text="Visual Basic .NET EDITION" />
 <StackPanel Margin="0,0,0,15"/>
 <!--从这里开始用了 Light Beacon 新闻主页的信息样式，十分感谢-->
 <StackPanel>
@@ -65,7 +65,6 @@
                                     <ColumnDefinition Width="1*" /> 
                                     <ColumnDefinition Width="1*" />
                                     <ColumnDefinition Width="1*" /> 
-                                    <ColumnDefinition Width="1*" /> 
                                 </Grid.ColumnDefinitions>
 <local:MyButton Height="35" Grid.Column="0"  Margin="0,0,5,4"
                     Text="刷新主页" EventType="刷新主页" ToolTip="就是一个刷新主页的按钮啦......"/>
@@ -75,8 +74,6 @@
 					Text="打开 PCL 的目录" EventType="打开文件" EventData="{path}" ToolTip="你的 PCL 位于: {path}"/>
 <local:MyButton Grid.Column="3"  Margin="0,0,5,4"
 					Text="打开 PCL 当前的日志" EventType="打开文件" EventData="{path}PCL\Log1.txt" ToolTip="将打开 {path}PCL\Log1.txt"/>
-<local:MyButton Grid.Column="4"  Margin="0,0,5,4"
-					Text="下载本主页源文件" EventType="下载文件" EventData="https://raw.gitcode.com/Ad_closeNN/aft/raw/main/Backup/1.16.2/Custom.xaml" ToolTip="直接把 Custom.xaml 放入 {path}PCL\ 文件夹即可"/>
 </Grid>
 	<StackPanel Margin="0,0,0,15"/>
 <local:MyButton Padding="13,10,13,10" ColorType="Red"
@@ -89,24 +86,18 @@
             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*" /> <!--首页开始用-->
-                                    <ColumnDefinition Width="1*" />                
-                                    <ColumnDefinition Width="1*" />                                    
+                                    <ColumnDefinition Width="1*" />                                      
                                 </Grid.ColumnDefinitions>
-        <local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,0"
-                    Text="版权信息" EventData="版权信息 - Copyright © Ad_closeNN 2024.|本主页由 Ad_closeNN 制作\n当前版本为: 1.16.2\n\n无特殊声明本主页采用 CC BY-NC-SA 4.0 授权\nCopyright © Ad_closeNN 2024." EventType="弹出窗口"/>
 <!--这样看挺好的吧-->
-			<local:MyButton Grid.Column="1" Height="35" Margin="0,0,10,0"
+			<local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,0"
 				        	Text="更新内容" EventData='
-更新内容 - V1.16.2 (2024/10/3)|
-1.将一些 GitHub 链接 替换为 GitCode(com) 链接\n
-2.将"版权信息"更新\n
-3.由于一些原因，导致 PCL 无法访问 Wemsur 的 pcl_homepage，故移除此主页\n
-4.优化其他细节（标题文字等）\n
-5.移除了Him
+更新内容 - V1.17 (2025/6/20)|
+1. 拉取某些网站图标将从 GitCode 拉取\n
+2. 移除了Him
 '
 
 							EventType="弹出窗口"/>
-        <local:MyButton Grid.Column="2" Height="35" Margin="0,0,10,0"
+        <local:MyButton Grid.Column="1" Height="35" Margin="0,0,10,0"
 					        Text="前往 PCL 个性化" ToolTip="可以快速切换主页" EventType="切换页面" EventData="3|1" />
 </Grid>
 </StackPanel>
@@ -118,10 +109,10 @@
 <local:MyCard Title="Minecraft 常用网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	<StackPanel Margin="25,40,23,15">
 		                <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png" Title="Minecraft 官方网站" Info="Minecraft - 官方网站" EventData="https://www.minecraft.net/" EventType="打开网页" Type="Clickable"/>
-		                <local:MyListItem Margin="-2,0,0,0" Logo="https://zh.minecraft.wiki/favicon.ico" Title="Minecraft 中文 Wiki" Info="新的 Minecraft 中文 Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
-		                <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
+		                <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/b0e2ffb8994cf6e4d4a9ea95ca854315fdc2d3c5/Hey_Wiki_logo.png" Title="Minecraft 中文 Wiki" Info="新的 Minecraft 中文 Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki" Type="Clickable"/>
+		                <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://klpbbs.com/favicon.ico" Title="苦力怕BBS" Info="最大的我的世界《Minecraft》基岩版（BE）中文资源、交流论坛之一" EventType="打开网页" EventData="https://klpbbs.com/" Type="Clickable" />
-                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.minebbs.com/favicon.ico" Title="MineBBS" Info="以我的世界基岩版（MCBE）内容为主的Minecraft中文论坛。" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/f50486b965355ba45fad57ea3d5a5fba8e4602c4/MineBBS.webp" Title="MineBBS" Info="以我的世界基岩版（MCBE）内容为主的Minecraft中文论坛。" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Anvil.png" Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="Discover, play, and share Minecraft content through our open-source platform built for the community." EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
@@ -133,11 +124,11 @@
 		
     <local:MyCard Title="GitHub - PCL2 常用网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	      <StackPanel Margin="25,40,23,15">
-		        <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="PCL2 源代码库" Info="Hex-Dragon/PCL2" EventData="https://github.com/Hex-Dragon/PCL2" EventType="打开网页" Type="Clickable"/>
-            <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="PCL2 内置帮助 源代码库" Info="LTCatt/PCL2" EventData="https://github.com/LTCatt/PCL2Help" EventType="打开网页" Type="Clickable"/>
-            <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="issues 反馈列表 - PCL2 源代码库" Info="Hex-Dragon/PCL2/issues" EventData="https://github.com/Hex-Dragon/PCL2/issues" EventType="打开网页" Type="Clickable"/>
-            <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="Pull requests(拉取请求) - PCL2 源代码库" Info="Hex-Dragon/PCL2/pulls" EventData="https://github.com/Hex-Dragon/PCL2/pulls" EventType="打开网页" Type="Clickable"/>
-            <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="讨论 - PCL2 源代码库" Info="Hex-Dragon/PCL2/discussions" EventData="https://github.com/Hex-Dragon/PCL2/discussions" EventType="打开网页" Type="Clickable"/>
+		        <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="PCL2 源代码库" Info="Hex-Dragon/PCL2" EventData="https://github.com/Hex-Dragon/PCL2" EventType="打开网页" Type="Clickable"/>
+            <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="PCL2 内置帮助 源代码库" Info="LTCatt/PCL2" EventData="https://github.com/LTCatt/PCL2Help" EventType="打开网页" Type="Clickable"/>
+            <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="issues 反馈列表 - PCL2 源代码库" Info="Hex-Dragon/PCL2/issues" EventData="https://github.com/Hex-Dragon/PCL2/issues" EventType="打开网页" Type="Clickable"/>
+            <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="Pull requests(拉取请求) - PCL2 源代码库" Info="Hex-Dragon/PCL2/pulls" EventData="https://github.com/Hex-Dragon/PCL2/pulls" EventType="打开网页" Type="Clickable"/>
+            <local:MyListItem Margin="-2,0,0,0" Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="讨论 - PCL2 源代码库" Info="Hex-Dragon/PCL2/discussions" EventData="https://github.com/Hex-Dragon/PCL2/discussions" EventType="打开网页" Type="Clickable"/>
         </StackPanel>
     </local:MyCard>
 
@@ -145,7 +136,7 @@
 			<StackPanel Margin="24,40,24,15">
 				<local:MyListItem  Margin="-2,0,0,0"
 		            		Logo="https://www.bing.com/favicon.ico" Title="必应 - Bing" Info="搜索引擎 - 有求必应"
-		            		EventType="打开网页" EventData="https://www.bing.com/?cc=us" Type="Clickable" />
+		            		EventType="打开网页" EventData="https://www.bing.com/" Type="Clickable" />
 				<local:MyListItem  Margin="-2,0,0,0"
 		            		Logo="https://www.so.com/favicon.ico" Title="360" Info="360搜索，一个搜索引擎"
 		            		EventType="打开网页" EventData="https://www.so.com/" Type="Clickable" />
@@ -376,13 +367,10 @@
 </local:MyCard>
     
 	<local:MyListItem Margin="-2,0,0,0" HorizontalAlignment="center" Width="200" Height="50"
-		Logo="https://github.githubassets.com/favicon.ico" Title="主页源代码 (GitHub)" Info="Ad-closeNN GitHub"
+		Logo="https://raw.gitcode.com/Ad_closeNN/img/blobs/fd55374d7b48368c9aae411ca1424682db4e4005/GitHub.png" Title="主页源代码 (GitHub)" Info="Ad-closeNN GitHub"
 		EventType="打开网页" EventData="https://github.com/Ad-closeNN/PCL2-home-page" Type="Clickable" />
-	<local:MyListItem Margin="-2,0,0,0" HorizontalAlignment="center" Width="200" Height="50"
-		Logo="https://raw.gitcode.com/Ad_closeNN/aft/raw/main/favicon.ico" Title="主页源代码 (Website)" Info="Homepage Website"
-		EventType="打开网页" EventData="https://ad-closenn.github.io/aft" Type="Clickable" />
 <TextBlock HorizontalAlignment="right" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" 
-               FontFamily="Microsoft YaHei UI, 微软雅黑" Text="Ver 1.16.2 (2024/10/3)" />
+               FontFamily="OPPO Sans 4.0, HarmonyOS Sans SC, Microsoft YaHei UI, 微软雅黑" Text="Ver 1.17 (2025/6/20)" />
 
     <StackPanel Margin="0,10,0,20" HorizontalAlignment="Center" Orientation="Horizontal">
       <local:MyButton Width="300" Height="35" Padding="13,0,13,0" Text="刷新" EventType="刷新主页" Margin="0,0,10,0" ToolTip="点击刷新主页" />
@@ -395,11 +383,7 @@
         <TextBlock Text="维护：Ad_closeNN" />
         <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
           <TextBlock Text="订阅地址: " />
-          <local:MyTextButton Margin="2" Text="https://raw.gitcode.com/Ad_closeNN/aft/raw/main/Custom.xaml" EventType="复制文本" EventData="https://raw.gitcode.com/Ad_closeNN/aft/raw/main/Custom.xaml" ToolTip="点击复制到剪贴板" />
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-          <TextBlock Text="官方网站: " />
-          <local:MyTextButton Margin="2" Text="https://ad-closenn.github.io/aft" EventType="打开网页" EventData="https://ad-closenn.github.io/aft" ToolTip="点击打开主页官网" />
+          <local:MyTextButton Margin="2" Text="https://pcl2-homepage.19991230.xyz/Custom.xaml" EventType="复制文本" EventData="https://pcl2-homepage.19991230.xyz/Custom.xaml" ToolTip="点击复制到剪贴板" />
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
           <TextBlock Text="GitHub: " />
